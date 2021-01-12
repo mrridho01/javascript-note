@@ -1,0 +1,17 @@
+//API 
+    Application Programming Interface >> sekumpulan fungsi, subroutine, protkol komunikasi, atau kaskas / tools untuk membuat perangkat lunak
+
+    Interface >> bagian yang sama antara 2 atau lebih komponen terpisah pada sebuah sistem komputer
+
+    API : 1. Antar muka yang berupa kumpulan fungsi yang dapat di panggil atau dijalankan oleh program lain
+          2. Penerapannya sangat luas :
+                - Bahasa Pemrograman
+                - Library & Framework
+                - Sistem Operasi
+                - Web API / Web Service
+                    Sebuah sistem perangkat lunak yang dibuat untuk mendukung interoperabilitas / interaksi antar 2 aplikasi yang berbeda melalui jaringan.
+                    (Biasanya pakai HTTP Protokol)
+                    Dalam seri ini yang dibuat adalah REST API.
+
+//REST API
+    

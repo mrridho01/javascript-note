@@ -1,0 +1,64 @@
+//Function : Parameter & Argument
+
+    parameter = variabel yang ditulis dalam kurung pada saat function dibuat, digunakan untuk menampung nilai yang dikirimkan saat function dipanggil
+
+    argument = nilai yang dikirimkan ke paramter saat fungsi dipanggil.
+
+    function tambah (a,b) {
+        return a + b;
+    }
+
+                var lagi=true;
+            while(lagi==true){
+            var s1 = parseInt(prompt('Masukkan sisi kubus 1 :'));
+            var s2 = parseInt(prompt('Masukkan sisi kubus 2 :'));
+
+            var kubus=function(s1,s2){
+                    var hasil = (s1*s1*s1) +(s2*s2*s2);
+
+                return hasil;
+
+            }; 
+            alert('Volume 2 kubus adalah: ' +kubus(s1,s2)); 
+            lagi = confirm('Apakah anda ingin menghitung lagi?');
+            } alert('Terima Kasih gan!');
+
+            bisa juga saat memanggil hasil function, parameternya dilakukan operasi aritmatika
+
+                                >>>alert('Volume 2 kubus adalah: ' +kubus(s1,s2)); 
+
+    Atau misal : var hasil = kali (tambah (2,1),kali(2,1))
+
+
+    //Bagaimana jika parameter dan argument tidak sesuai?
+        Jika parameter < argument, maka argument kelebihannya akan diabaikan
+        Jika parameter >  argument, maka parameter kelebihannya akan diisi dengan nilai undefined
+
+    // arguments (pakai s)
+        array yang berisi nilai yang dikirimkan saat fungsi dipanggil
+
+        misal :
+        function tambah (a,b) {
+            return a + b;
+        } var coba = tambah(5,10,20);
+
+        argument selain dikirim ke parameter, juka ditampung di arguments
+        tambah (5,10,20,"hi",false);
+
+        arguments =[5,10,20,"hi",false];
+        misal :
+        var tambah = function() {
+            return arguments;
+        }
+        var coba = tambah(5,10,20,"hi",false);
+
+    
+        function tambah() {
+            var hasil = 0;
+            for (var i=0;i<arguments.length;i++) {
+                hasil+=arguments[i];
+            }
+            return hasil;
+        } var coba = tambah(1,2,3,4,5);
+
+        console.log(coba);

@@ -1,0 +1,21 @@
+// Refactoring
+    Sebuah proses mengubah kode agar menjadi lebih 'baik' tanpa mengubah fungsionalitasnya
+
+    Kenapa :
+            1. Readability
+            2. DRY (Do not Repeat Yourself)
+            3. Testability
+            4. Performance
+            5. Maintainability
+
+    Misal :
+        function jumlahVolumeDuaKubus(a,b) {
+            var volumeA = a*a*a,volumeB = b*b*b ,total= volumeA +volumeB;
+
+            return total;
+        } alert(jumlahVolumeDuaKubus(1,2));
+
+        Menjadi :
+        function jumlahVolumeDuaKubus(a,b) {
+            return (a*a*a) + (b*b*b)
+        } alert (jumlahVolumeDuaKubus(1,2));

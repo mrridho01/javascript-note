@@ -1,0 +1,24 @@
+// Deklarasi dan Expresi
+
+    // Function Declaration
+        function identifier (ParameterList opt) {FunctionBody}
+
+        function tampilPesan (nama) {
+            alert ('halo' + nama);
+        }
+
+    // Function Expression
+        function identifier opt (ParameterList opt) {FunctionBody}
+
+        var tampilPesan = function (nama) {
+                            alert ('halo' + nama);
+                            }               
+
+    // Perbedaan 
+        1. Function Declaration 
+            - Lebih Fleksibel (dapat ditulis dimanapun ; dipanggil dulu baru deklarasi atau deklarasi dulu baru dipanggil)
+                Ini bisa karena ada konsep hoisting
+        2. Function Expression
+            - Harus didefinisikan terlebih dahulu sebelum dipanggil
+            - Lebih powerful (sebagai closure; sebagai argumen untuk function lain; dan IIFE (Immediately invoked Function Expression))
+            - Digunakan pada JS yang lebih modern

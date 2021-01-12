@@ -1,0 +1,11 @@
+// Membuat Function
+    Function yang baik hanya mengerjakan 1 hal saja
+
+    Function :
+        Blok kode yang dibuat untuk melakukan tugas spesifik; jangan untuk banyak hal
+        Dapat dipanggil berulang kali
+        Memudahkan penelusuran
+        Reusabilit
+        
+        fungsi return : memberitahu interpreter bahwa kita telah selesai menegrajakan sesuatu dan 'inilah' hasilnya
+        Setelah samapai pada keywoard return, function akan berhenti berjalan

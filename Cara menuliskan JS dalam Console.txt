@@ -1,0 +1,58 @@
+//Bagaimana cara menuliskan JS dalam web browser
+    Dengan menulis tag script
+    Internal >> Sintax JS langsung di dalam tag script pada file HTML
+    External >> File terpisah
+
+    Contoh Internal :
+
+    <!DOCTYPE html>
+<html >
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+		<h1>Hello World</h1>
+	
+<script>
+    var x;
+    x = 10;
+</body>
+</html>
+
+ini gak muncul apa apa.. Kalau kita ingin JS menuliskan sesuatu di dalam console, pakai fungsi:
+console.log();
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+		<h1>Hello World</h1>
+	
+<script>
+    var x;
+    x = 10;
+    console.log("Hello World!");
+	console.log("Isi dari variabel x adalah " + x);
+</script>
+</body>
+</html>
+
+//Kita akan membuat syntax js secara external..
+    buat dulu file js di dalam folder project kita, lalu hubungkan file js dengan html
+    Pakai atribut src.
+
+    <!DOCTYPE html>
+<html >
+<head>
+    <title>Javascript</title>
+</head>
+<body>
+		<h1>Hello World</h1>
+	
+<script src="script.js"></script>
+</body>
+</html>
+
+Bisa pakai relative URL...

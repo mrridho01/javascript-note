@@ -1,0 +1,40 @@
+// Array
+    Susunan sistematis dari objek-objek yang serupa
+    Tipe Data yang digunakan untuk mendeskripsikan kumpulan elemen (nilai atau variabel), yang tiap tiap elemennya memiliki index
+
+    Array = variabel yang lebih sakti (karena bisa menampung lebih dari satu nilai)
+
+    var hari = ['Senin','Selasa','Rabu'];
+
+    Kenapa Array ?  1. Mempermudah pengelolaan nilai / value / Data
+                    2. Manajemen memori
+
+    //Karakteristik Array :
+        1. Variabel jamak, yang mempunyai banyak elemen dan diacu dengan nama yang sama
+        2. kumpulan pasangan key dan nilai (key and value pair)
+        3. Key adalah index pada array dengan tipe integer dimulai dari 0
+        4. Array pada JS tipe nya Object
+        5. Memiliki fungsi / method length uuntuk menghitung jumlah elemen di dalamnya
+        6. Elemen pada array boleh memiliki tipe data yang berbeda
+
+    //Key and Value Pair
+        var binatang=[];
+            binatang = ['Kucing','Kelinci','Monyet','Panda','Koala','Sapi'];
+        console.log(binatang[4]); // Hasilnya Koala
+        console.log(typeof(binatang)); // Hasilnya Object
+        console.log(binatang.length); // Hasilnya 6
+
+        var myArr=['teks',2,false];
+        var myFunc=function(){
+            alert('Hello World!');
+        }
+        var myArr2 = ['teks',2,false,myFunc];
+
+
+        var myArr3 = ['teks',2,false,myFunc,[4,5,6]];
+        cara nampilin angka 5 dalam array?
+
+            console.log([myArr3[4][1]]);
+
+
+    

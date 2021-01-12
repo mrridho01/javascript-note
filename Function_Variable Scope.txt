@@ -1,0 +1,26 @@
+//Variable Scope
+    JS menggunakan function scope
+
+    contoh :
+
+    //global scope / window scope
+    var a = 1;      // nilai a dapat digunakan di sleuruh program, termasuk  saat di dalam function
+
+    function test(){
+        var b = 2;
+    }
+    tes();
+    console.log(b); // b tidak muncul karena hanya untuk function test
+
+
+
+
+    var a=1;
+
+    function test() {
+        var a =2; // namanya name conflict
+    }
+    tes();
+    console.log(a): // yang muncul 1
+
+

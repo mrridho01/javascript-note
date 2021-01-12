@@ -1,0 +1,46 @@
+//Pop Up Box / Dialog Box
+
+    1. Alert
+        alert('hello world');
+
+                    <!DOCTYPE html>
+            <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <title>Javascript</title>
+            </head>
+            <body>
+                    <h1>Hello World</h1>
+                
+                <script src="syntax.js">
+                    
+                </script>
+
+            </body>
+            </html>
+
+            Alertnya di file "syntax.js"
+
+    2. Prompt
+        Ada kotak isiannya. Kotak ini mengembalikan nilai apapun yang masuk.
+        
+        prompt('masukkan nama:');
+
+        Untuk menampung isian user : pakai var
+       
+        var nama =prompt('masukkan nama:');
+        alert ('Hallo Assalamu\'alaikum ' +nama);
+
+    3. Confirm
+        Untuk meminta konirmasi dari user
+        confirm('kamu yakin?');
+
+        Tapi bisa menentukan, apa yang akan terjadi kalau user tekan Ok atau Cancel
+        Confirm outputannya adalah nilai boolean
+
+            var tes,
+                nama;
+            alert('Halo, kenalan Yuk!');
+            nama=prompt('Siapa nama mu?');
+            tes=confirm('kamu yakin '+nama+'??');
+            alert('Oke '+nama);

@@ -1,0 +1,105 @@
+//Switch
+    Seperti if else, namun switch hanya memiliki 1 kondisi
+
+    switch(ekspresi) {      //ekspresi bukan kondisi
+        case "nilai 1":
+            aksi 1
+        [break;]
+        case "nilai 2":
+            aksi 2
+        [break;]
+        case "nilai n":
+            aksi n
+        [break;]
+        default:
+            aksi default
+        [break;]
+    }
+
+            var angka=prompt('masukkan angka :');       //Kalau pakai prompt, hasilnya adalah string
+
+        if(angka==1){
+            alert('anda memasukkan angka '+angka);
+        } else if(angka==2){
+            alert('anda memasukkan angka '+angka);
+        } else if(angka==3){
+            alert('anda memasukkan angka '+angka);
+        } else{
+            alert('anda memasukkan angka yang salah');
+        }
+
+        //pakai === pada kondisi else if, pakai fungsi parseInt ();
+        var angka=parseInt(prompt('masukkan angka :'));       //Apapun inputan prompt, angka nya jadi integer
+
+        if(angka==1){
+            alert('anda memasukkan angka '+angka);
+        } else if(angka==2){
+            alert('anda memasukkan angka '+angka);
+        } else if(angka==3){
+            alert('anda memasukkan angka '+angka);
+        } else{
+            alert('anda memasukkan angka yang salah');
+        }
+
+        contoh switch :
+        
+        var angka = parseInt(prompt('masukkan angka :'));
+
+        switch(angka){
+            case 1:
+                alert('anda memasukkan angka 1');
+                break;
+            case 2:
+                alert('anda memasukkan angka 2');
+                break;
+            case 3:
+                alert('anda memasukkan angka 3');
+                break;
+            default :
+                alert('angka yang anda masukkan salah);
+                break;
+        }
+
+        var item = prompt('masukkan nama makanan / minuman : \n (cth: nasi, daging, susu, burger, softdrink');
+
+        switch (item){
+            case 'nasi' :
+                alert('makanan / minuman sehat');
+                break;
+            case 'daging' :
+                alert('makanan / minuman sehat');
+                break;
+            case 'susu' :
+                alert('makanan / minuman sehat');
+                break;
+            case 'burger' :
+                alert('makanan / minuman tidak sehat');
+                break;
+            case 'softdrink' :
+                alert('makanan / minuman tidak sehat');
+                break;
+            default :
+                alert('salah gan');
+                break;
+        }
+
+        \\Untuk singkatnya :
+        var item = prompt('masukkan nama makanan / minuman : \n (cth: nasi, daging, susu, burger, softdrink)');
+
+        switch (item){
+            case 'nasi' :
+            case 'daging' :
+            case 'susu' :
+                alert('makanan / minuman sehat');
+                break;
+            case 'burger' :
+            case 'softdrink' :
+                alert('makanan / minuman tidak sehat');
+                break;
+            default :
+                alert('salah gan');
+                break;
+        }
+
+
+        PERHATIKAN TIPE DATA !!!!!!!

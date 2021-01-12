@@ -1,0 +1,18 @@
+//Pengkondisian IF ELSE
+
+    if(kondisi) {
+        aksi
+    }
+    ...
+
+    var angka=1;
+    if(angka===1) {
+        alert('anda memasukkan angka 1');
+    }
+
+    var angka=prompt ('masukkan angka : ');
+    if(angka%2==0) {
+        alert(angka +' adalah bilangan GENAP ');
+    } else {
+        alert(angka +' adalah bilangan GANJIL ');
+    }

@@ -1,0 +1,55 @@
+//Function
+    1. Sebuah sub-program / sub routine yang dapat dipanggil di bagian lain pada program
+    2. Merupakan struktur dasar pembentuk javascript
+    3. Disebut juga sebagai prosedur (kumpulan statement untuk melakukan tugas atau menghitung sebuah nilai)
+    4. Untuk dapat menggunakannya harus membuat terlebih dahulu function tersebut, lalu memamnggilnya
+    5. Termasuk kedalam first class object
+
+    Kenapa function?
+    - Reusability (DRY : Do not Repeat Yourself)
+    - Dekomposisi / Abstraksi
+    - Modularitas
+
+    Kategori Function :
+    1. Built in function
+        Fungsi yang sudah dibuat javascript
+        Kita tinggal memanggilnya saja
+        misal : alert(); confirm();prompt();
+        dll...
+
+        JS selalu menghitung karakter dari 0 
+
+    2. user define function
+        Fungsi yang kita buat sendiri
+        Menggunakan keyword function
+        Nama Function (opsional)
+        Parameter / Argument
+            disimpan di dalam ()
+            boleh ada atau tidak, jika ada boleh lebih dari satu
+            dipisahkan oleh koma(,)
+        function body dibungkus dengan {}
+        Dapat mengembalikan nilai (return value)
+
+// Membuat function user defined :
+
+    1. Function declaration
+        function jumlahDuaBilangan(a,b) {
+            var total;
+            total = a+b;
+
+            return total;
+        }
+
+    2. Function expression 
+        var jumlahDuaBilangan=function(a,b){
+            var total;
+            total = a+b;
+
+            return total;
+        }
+
+// Memanggil / menjalankan function
+
+    alert(jumlahDuaBilangan(1,2));
+    alert(jumlahDuaBilangan(25,30));
+    alert(jumlahDuaBilangan(1500,7.5));

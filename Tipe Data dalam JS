@@ -1,0 +1,131 @@
+Tipe data dalam JS :
+
+1. Number
+	Diuble precision floating-point 64 bit. 
+	Artinya tidak ada bil. bulat, hanya ada pecahan.. yang ditampung 64 bit maks (2^64)
+
+// Jenis jenis Number
+	I. Angka tanpa desimal
+	Akurasi hanya sampai 15 digit
+
+	II. Angka dengan desimal
+	Tulis pake titik, jangan koma. Maksimal 17 digit belakang koma
+	3.14, 0.5, 100.00
+
+	III. Eksponen
+	123e5 // 12300000
+	123e-5 // 0.00123
+
+	IV. Bil. Negatif
+	sign 1 bit, exponent 11 bit, fraction 52 bit
+
+	Jangan pernah mengawali angka dengan 0. Dianggap sebagai oktal.
+
+	V. Angka Spesial
+	Infinity
+	-infinity
+	NaN
+
+	Angka dibagi string yang didalamnya ada angka, JS menganggapnya sebagai angka
+// Operator dalam JS
+	Operator = simbol untuk melakukan operasi
+	
+
+	I. Aritmatika (binary)
+		+,-,*,/,% (modulus yakni sisa bagi)
+		Operator presedence : KuKaBaTaKu (kurung Kali Bagi Tambah Kurang)
+
+	II. Penugasan (assignment) (binary)
+		=
+		x+=y >> x=x+y 
+		x-=y >> x=x-y
+		x*=y >> x=x*y
+		x/=y >> x=x/y
+		x%=y >> x=x%y
+
+		var x
+		x = 10 >> yakni memerintahkan 10 berada di dalam var.. Dan memori komputer masih mengingat nilainya
+
+	III. Perbandingan / comparison (binary)
+
+		== >> sama dengan
+		!= >> Tidak sama dengan
+		=== >>> strict sama dengan
+		!== >> Strict tidak sama dengan
+		> >> Lebih besar dari
+		< >> Lebih kecil dari
+		>= Lebih besar sama dengan
+		<= Lebih kecil sama dengan
+
+		Strict = membandingkan tipe data
+
+	IV. Logika (binary)
+
+		&& >> AND
+		|| >> OR
+		! >> NOT (Ditulis di depan ekspresi, misal !(x <10)
+
+	V. String
+		+
+
+		angka + string jadinya string
+		10 + 10 + "10" >> "2010"
+		"10" + 10 + 10 >> "101010"
+
+	VI. Typeof (unary)
+		typeof(operand); mengetahui jenis tipe data
+
+	VII. kondisional (Terniary)
+		(kondisi) ? benar : salah
+
+		(x % 2 == 0) ? "genap" : "ganjil"
+
+2. String
+	Digunakan untuk merepresentasikan daat tekstual (plain text)
+	bungkus data dengan " atau '
+	'hello world'; "MR"
+	Jika menemukan " dan ' dalam 1 string, akan error
+		//Solusi : Pakai escape character
+			'"gerakan bersih" di hari jum\'at"
+			Macam - macam escape character :
+			\0 >> karakter null
+			\' >> '
+			\" >> "
+			\\ >> \
+			\n >> new line / baris baru
+			\t >> tab
+			\b >> backspace
+			\uxxxx >> unicode
+		
+		// Concatenation / konkantenasi
+			+
+		// Operator perbandingan == / ===
+			huruf besar dan kecil berbeda
+		// .length
+			menghitung panjang string. Spasi juga dihitung
+3. Boolean
+	tipe data untuk merepresentasikan logika true atau false, untuk menentukan alur kendali program
+	Dalam praktek, selain pengkondisian, di dalam source code juga pakai fungsi : Boolean(nilai)
+	Boolean (10<20)
+	Boolean (10) >> True
+	Boolean (0) >> False
+	Boolean (-1) >> True
+		// Nilai truthy dan falsy
+			Truthy :
+			True
+			Non-zero number
+			"string"
+			object
+			arrays
+			functions
+			
+			falsy :
+			false
+			0
+			""
+			Undefined
+			Null
+			NaN
+4. Object
+5. Function
+6. Undefined

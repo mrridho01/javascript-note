@@ -1,0 +1,41 @@
+//Control FLow (Alur Kendali)
+    Dalam program ada:
+    1. Normal Flow >> Apabila program kita memiliki lebih dari 1 statement,
+                        Maka statement tersebut akan dieksekusi dari atas ke bawah atau kiri ke kanan
+    2. Control Flow >> Dalam alur ada pengulangan dan pengkondisian
+
+// Pengulangan / loop / iteration
+    Mengerjakan statement yang sama berulang Kali
+    ada :   for
+            while
+            do while
+
+    alert('Mulai');
+    alert('Hello World');
+    alert('Hello World');
+    alert('Hello World');
+    alert('Hello World');
+    alert('Hello World');
+    alert('Selesai');
+
+    Menjadi :
+
+    alert('Mulai');
+    for(var i=0; i<5; i++) {
+        alert ('Hello World');
+    }
+    alert('selesai');
+
+//Pengkondisian / Percabangan
+    Program kita bisa memilih statement yang berbeda
+    ada :   if
+            if.. else
+            if.. else if.. else
+            switch
+
+    var angka = prompt('Masukkan angka :');
+    if(angka%2===0){
+        alert(angka + ' adalah bilangan GENAP');
+    } else{
+        alert(angka +  ' adalah bilangan GANJIL');
+    }

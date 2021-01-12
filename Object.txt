@@ -1,0 +1,48 @@
+    Object = Kumpulan nilai, yang memiliki nama (bukan index seperti array)
+        Array >> Variabel yang lebih sakti
+        Object >> Array yang lebih sakti
+
+        Misal :
+
+        var namaMhs = 'Muhammad Ridho';
+        var umumrMhs = '23';
+        var lulus = true;
+        var IPSemester = [2.90,3.10,3.25,2.88,3.04];
+
+        function IPKumulatif(IPSemester) {
+            var total = 0;
+            for (i=0;i<IPSemester.length;i++) {
+                total+= IPSemester[i];
+            } 
+            return total/IPSemester.length;
+        };
+
+            // Bagaimana apabila mahasiswa nya banyak dan nambah?
+        
+        Dengan object :
+            var mahasiswa = {
+                nama : 'Muhammad Ridho',
+                lulus : true,
+                IPSemester : [2.90,3.10,3.25,2.88,3.04],
+                IPKumulatif : function() {
+                    var total = 0;
+                    var ips = this.IPSemester;
+                    for (i=0;i<ips.length;i++) {
+                        total += ips[i];
+                    } return total/ips.length;
+                }
+            }
+
+            mahasiswa.IPKumulatif();
+
+    // Anatomi Object
+        var Orang = {
+            nama : 'Sandhika Galih',
+            umur : 31,
+            pekerjaan : 'Dosen',                //nama, umur dan pekerjaan disebut properti, dipisahkan dengan tanda koma
+            sapa : function () {
+                return 'Hi, nama saya ' + this.nama + ' usia saya ' + this.umur + ' tahun, dana saya dalah seorang ' + this.pekerjaan;
+            // Function dalam object disebut Method
+            }
+            }
+        

@@ -1,0 +1,37 @@
+// Rekursif
+
+        Sebuah fungsi yang memanggil dirinya sendiri. Di daalam fungsi ada fungsi yang memanggil dirinya sendiri.
+        Rekursif harus berakhir dan menghasilkan nilai
+
+        var tampilAngka = function(n) {
+            console.log(n);
+            return tampilAngka
+        }
+
+        tampilAngka(10); // Tidak akan berakhir
+
+        // Base Case supaya fungsi berhenti.
+
+        function cetakAngka(n) {
+            if (n === 0) {
+                return;
+            }
+                console.log(n);
+                cetakAngka(n-1);
+        } cetakAngka(10);
+
+        //Faktorial
+            5! = 5 x 4 x 3 x 2 x 1
+
+        function faktorial(n) {
+            if (n === 0) {return 1};
+            return n * faktorial(n-1);      //rekursif nya yakni faktorial(n-1)
+        }
+
+        // Semua looping bisa dibuat rekursif, tapi tidak bisa sebaliknya
+
+            Implementasi Rekursif : 1. Menggantikan looping 
+                                    2. Fibonacci
+                                    3. Pencarian dan penulusuran data list dan tres
+                                    4. Bahasa pemrugraman yang tidak memiliki pengulangan
+

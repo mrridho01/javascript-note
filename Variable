@@ -1,0 +1,40 @@
+Variable = Tempat / wadah untuk menyimpan nilai
+
+	// Deklarasi
+		Mendaftarkan variabel ke dalam lingkup yang sesuai
+	// Inisialisasi
+		Menyediakan memori untuk variabel
+	// 	Assignment
+		Mendapatkan nilai yang spesifik ke dalam variabel
+		
+	Contoh :
+	var x; // deklarasi & inisialisasi. WAJIB melakukan deklarasi dan inisialisasi
+	x = 20; // assignment
+	
+	//Deklarasi var : var
+					let
+					const
+		var <nama variabel>
+	// Aturan penulisan variabel :
+		1. var ga boleh pake spasi
+		2. var boleh mengandung angka, tetapi gak boleh diawali angka
+		3. kalau nama lebih dari 1 , dipisahkan dengan _, atau $, atau $_$, atau Camel Case
+		
+			Camel Case : var namaVariabelPanjang;
+			
+		4. Keyword & reserved word , tidak boleh dijadikan nama var
+		5. Bisa pakai shorthand
+			Contoh :
+			var nama;
+			var umur;
+			var lulus;
+			
+			nama = "Ridho";
+			umur = "23";
+			lulus = "true";
+			
+			Dengan shorthand :
+			var nama = "Ridho",
+				umur = 23,
+				lulus = true;
+		6. Variable Scope

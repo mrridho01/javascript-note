@@ -1,0 +1,32 @@
+//Pengkondisian Else IF
+    Pengkondisian selain if Else
+
+        if(kondisi 1) {
+            aksi 1
+        } else if (kondisi 2){              // antara if dan else
+            aksi 2
+        } else {
+            aksi 3
+        }
+
+                var angka = prompt('Masukkan angka :');
+
+                if(angka%2==0) {
+                    alert(angka+ ' adalah bilangan GENAP');
+                } else if (angka%2 === 1) {
+                    alert(angka+ ' adalah bilangan GANJIL');
+                } else {
+                    alert(angka+ ' adalah bukan angka');
+                }
+
+                var noAngkot=1,jmlAngkot=10,angkotBeroperasi=6;
+
+                for(noAngkot;noAngkot<=jmlAngkot;noAngkot++) {
+                    if(noAngkot<=angkotBeroperasi && noAngkot!=5){
+                        console.log('Angkot No. '+noAngkot+' beroperasi normal');
+                    } else if(noAngkot== 8 || noAngkot==10 || noAngkot==5){
+                        console.log('Angkot No. '+noAngkot+' harus lembur');
+                    }  else{
+                        console.log('Angkot No. '+noAngkot+' sedang di bengkel');
+                    }
+                }
